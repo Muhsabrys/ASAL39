@@ -1,0 +1,385 @@
+{
+  "friday": [
+    {
+      "time": "8:00 AM - 8:40 AM",
+      "type": "Registration",
+      "title": "Registration and Coffee"
+    },
+    {
+      "time": "8:40 AM - 8:45 AM",
+      "type": "Opening",
+      "title": "Opening Remarks"
+    },
+    {
+      "time": "8:45 AM - 10:45 AM",
+      "type": "Session",
+      "title": "Syntax",
+      "presentations": [
+        {
+          "title": "Ditransitive Structures in Najdi Saudi Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "The Syntax of Exceptional Exceptive Constructions in Tunisian Arabic (TA)",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Anybody Can, But Him&You Cannot: A New PCC Type in Malki Arabic and Its Implications",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "When Syntax and Semantics Diverge: Semantic Agreement in Arabic and its NLP Implications",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "10:45 AM - 11:00 AM",
+      "type": "Break",
+      "title": "Coffee Break"
+    },
+    {
+      "time": "11:00 AM - 12:00 PM",
+      "type": "Keynote",
+      "title": "Keynote: On the Morphosyntax of Adnominal Demonstratives in Egyptian Arabic",
+      "presentations": [
+        {
+          "title": "On the Morphosyntax of Adnominal Demonstratives in Egyptian Arabic",
+          "authors": "Usama Soltan",
+          "affiliation": "Middlebury College, United States",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "12:00 PM - 1:00 PM",
+      "type": "Break",
+      "title": "Lunch Break"
+    },
+    {
+      "time": "1:00 PM - 2:15 PM",
+      "type": "Poster Session",
+      "title": "Poster Session - Fine Arts 015",
+      "presentations": [
+        {
+          "title": "Vocatives as attitudinal markers: The Tunisian Arabic particle ha:",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Between Cultures, Between Words: Politeness and Request Strategies Among Heritage Speakers of Arabic in the US",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Discourse of Manipulation in the Egyptian Presidential Candidates's T.V Interviews (2012) A Pragma-Critical Analysis",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "From KhilƒÅfah to Dawlah Madaniyyah: A Critical Discourse Analysis of Ideological Rearticulation in the Muslim Brotherhood's Arabic Political Language",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Spatial Prepositions in Najdi Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Root or Lexeme? Evidence from Diminutives in Najdi Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Emphatic Imperatives in Iraqi Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Phonological Transfer and Markedness Effects in Saudi Arabic Speakers' English Obstruent Production",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "2:30 PM - 4:30 PM",
+      "type": "Session",
+      "title": "Computational Linguistics - Radio-TV 210",
+      "presentations": [
+        {
+          "title": "Computational Modeling of Semantic Drift in Qur'anic Arabic and its English Translations: A Hybrid Embedding Approach",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Maskuk: Leveraging LLMs and the Web in Building an Arabic Collocation Dictionary",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "The promise and limits of generative AI in linguistics research: Digitizing an Arabic corpus",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Natural Language Inference: Lost in Translation? A Study of Cross-Lingual Label Stability in Arabic Machine Translation",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "4:30 PM - 4:50 PM",
+      "type": "Break",
+      "title": "Coffee Break"
+    },
+    {
+      "time": "4:50 PM - 5:50 PM",
+      "type": "Keynote",
+      "title": "Keynote Address",
+      "presentations": [
+        {
+          "title": "TBA",
+          "authors": "Muhammad Abdul-Mageed",
+          "affiliation": "The University of British Columbia, Canada",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "6:00 PM - 7:00 PM",
+      "type": "Reception",
+      "title": "Reception - Ferguson Center"
+    }
+  ],
+  "saturday": [
+    {
+      "time": "8:00 AM - 8:30 AM",
+      "type": "Registration",
+      "title": "Registration and Coffee"
+    },
+    {
+      "time": "8:30 AM - 10:30 AM",
+      "type": "Session",
+      "title": "Phonetics/Phonology",
+      "presentations": [
+        {
+          "title": "Prevoicing is perceptually redundant: evidence from one Arabic and two Iranian languages",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Final Devoicing and Voice Assimilation in Qatari Arabic: Phonetic or Phonological?",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Acoustic Correlates to Laryngeal Articulation in Pharyngeal Consonants in Modern Standard Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Sonority as a design principle in Arabic quadriliteral root architecture",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "10:30 AM - 10:45 AM",
+      "type": "Break",
+      "title": "Coffee Break"
+    },
+    {
+      "time": "10:45 AM - 11:15 AM",
+      "type": "Session",
+      "title": "Phonetics/Phonology (continued)",
+      "presentations": [
+        {
+          "title": "Toward Customizable Forced-Alignment for Dialectal Arabic Speech",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "11:15 AM - 12:15 PM",
+      "type": "Keynote",
+      "title": "Keynote Address",
+      "presentations": [
+        {
+          "title": "TBA",
+          "authors": "Jalal Al-Tamimi",
+          "affiliation": "Université Paris Cité, France",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "12:15 PM - 1:15 PM",
+      "type": "Lunch",
+      "title": "Catered Lunch and Business Meeting - Radio-TV 210"
+    },
+    {
+      "time": "1:15 PM - 2:45 PM",
+      "type": "Session",
+      "title": "L2/Heritage",
+      "presentations": [
+        {
+          "title": "Arabic Heritage Speakers' Perception of Emphatic‚ Plain Contrasts: The Influence of Vowel Context and Consonant Position",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Crosslinguistic Influence and Protracted Instability of Interface Properties in Advanced L2 Learning: The Case of Generic Plurals in Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Foreign-accentedness, Comprehensibility and Intelligibility in L2 Arabic Speech: Relationships and Linguistic Correlates",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "2:45 PM - 3:00 PM",
+      "type": "Break",
+      "title": "Coffee Break"
+    },
+    {
+      "time": "3:00 PM - 4:30 PM",
+      "type": "Session",
+      "title": "Egyptian Arabic/Discourse",
+      "presentations": [
+        {
+          "title": "Stylistic Terms of Address among Couples in Egyptian TV Series: Beyond Simple Expressions of Lexical Meaning",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Bilingual and Diglossic Code-Switching in Egyptian Arabic, Standard Arabic, and English: A Comparative MEG Study of Brain Activity",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "A Narrative Function for the Historical Present in Egyptian Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "4:30 PM - 4:40 PM",
+      "type": "Break",
+      "title": "Break"
+    },
+    {
+      "time": "4:40 PM - 5:10 PM",
+      "type": "Session",
+      "title": "Discourse Analysis",
+      "presentations": [
+        {
+          "title": "Online Misogyny in Saudi Arabia: A Linguistic Analysis of X Discourse",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "5:10 PM - 6:10 PM",
+      "type": "Keynote",
+      "title": "Keynote Address",
+      "presentations": [
+        {
+          "title": "TBA",
+          "authors": "Nihal Nagi Sarhan",
+          "affiliation": "Ain Shams University, Egypt",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "6:15 PM onwards",
+      "type": "Dinner",
+      "title": "Conference Dinner - Marco Polo Restaurant"
+    }
+  ],
+  "sunday": [
+    {
+      "time": "8:15 AM - 8:45 AM",
+      "type": "Registration",
+      "title": "Coffee"
+    },
+    {
+      "time": "8:45 AM - 10:45 AM",
+      "type": "Session",
+      "title": "Morphology and Lexicon",
+      "presentations": [
+        {
+          "title": "Arabic Binominal Compound Constructions & Word Formation",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Evaluating Arabic Morphological Analyzers on Moroccan Arabic Diminutives: Challenges and Performance Gaps",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Permeability and stratification in the Moroccan Arabic diglossic lexicon",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Differential Semantic Retention Patterns of Standard Arabic Lexicon in Regional Dialects",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "10:45 AM - 11:00 AM",
+      "type": "Break",
+      "title": "Coffee Break"
+    },
+    {
+      "time": "11:00 AM - 1:00 PM",
+      "type": "Session",
+      "title": "Grammar Issues",
+      "presentations": [
+        {
+          "title": "The discourse function of second-person clitics in Khuzestani Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Evidence for Indexical Shift in Moroccan Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "Answering systems and proposition salience: Evidence from Hijazi Arabic",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        },
+        {
+          "title": "A Semantic-Syntactic Typology of Medieval Arabic Proverbial Structures",
+          "authors": "TBA",
+          "abstract": "Abstract available upon request."
+        }
+      ]
+    },
+    {
+      "time": "1:00 PM",
+      "type": "Closing",
+      "title": "Closing Remarks - End of Symposium"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+Friday, March 27 (Radio-TV210)
+8:00-8:40 Registration and Coffee
+8:40--8:45 Opening Remarks
+
+Syntax
+8:45-9:15 Ditransitive Structures in Najdi Saudi Arabic   
+9:15-9:45 The Syntax of Exceptional Exceptive Constructions in Tunisian Arabic (TA)   
+9:45-10:15 Anybody Can, But Him&You Cannot: A New PCC Type in Malki Arabic and Its Implications   
+10:15-10:45 When Syntax and Semantics Diverge:  Semantic Agreement in Arabic and its NLP Implications  
+
+10:45-11:00  coffee break
+
+11:00-12:00 Keynote  Usama Sultan: On the Morphosyntax of Adnominal Demonstratives in Egyptian Arabic
+
+12:00-1:00 Lunch Break
+
+1:00-2:15 Poster session in Fine Arts 015  [See below for poster titles]
+
+Radio-TV 210 
+Computational Linguistics
+2:30-3:00 Computational Modeling of Semantic Drift in Qur’anic Arabic and its English Translations: A Hybrid Embedding 
+Approach   
+3:00-3:30 Maskuk: Leveraging LLMs and the Web in Building an Arabic Collocation Dictionary   
+3:30-4:00 The promise and limits of generative AI in linguistics research: Digitizing an Arabic corpus   
+4:00-4:30 Natural Language Inference: Lost in Translation? A Study of Cross-Lingual Label Stability in Arabic Machine Translation   
+
+4:30-4:50 Coffee Break
+
+4:50-5:50 Keynote  Muhammad Abdul-Mageed
+
+6:00-7:00 Reception – Ferguson Center
+
+Saturday, March 28 (Radio-TV 210)
+8:00-8:30 Registration and Coffee
+Phonetics/Phonology
+8:30-9:00 Prevoicing is perceptually redundant: evidence from one Arabic and two Iranian languages   
+9:00-9:30 Final Devoicing and Voice Assimilation in Qatari Arabic: Phonetic or Phonological?
+9:30-10:00 Acoustic Correlates to Laryngeal Articulation in Pharyngeal Consonants in Modern Standard Arabic   
+10:00-10:30 Sonority as a design principle in Arabic quadriliteral root architecture   
+
+10:30-10:45 Coffee break
+
+10:45-11:15 Toward Customizable Forced-Alignment for Dialectal Arabic Speech   
+11:15-12:15 Keynote Al-Tamimi
+
+12:15-1:15 Catered Lunch and Business Meeting (Radio-TV 210)
+
+L2/Heritage
+1:15-1:45 Arabic Heritage Speakers’ Perception of Emphatic‚ Plain Contrasts: The Influence of Vowel Context and Consonant 
+Position   
+1:45-2:15 Crosslinguistic Influence and Protracted Instability of Interface Properties in Advanced L2 Learning: The Case of Generic 
+Plurals in Arabic   
+2:15-2:45 Foreign-accentedness, Comprehensibility and Intelligibility in L2 Arabic Speech: Relationships and Linguistic Correlates 
+
+2:45-3:00 coffee break
+Egyptian Arabic/discourse
+3:00-3:30 Stylistic Terms of Address among Couples in Egyptian TV Series: Beyond Simple Expressions of Lexical Meaning   
+3:30-4:00 Bilingual and Diglossic Code-Switching in Egyptian Arabic, Standard Arabic, and English: A Comparative MEG Study of 
+Brain Activity   
+4:00-4:30 A Narrative Function for the Historical Present in Egyptian Arabic
+
+4:30—4:40  break
+
+4:40-5:10 Online Misogyny in Saudi Arabia: A Linguistic Analysis of X Discourse 
+5:10-6:10  Keynote Nihal Nagi Sarhan
+
+6:15-onward: Conference dinner at Marco Polo restaurant
+
+
+Sunday, March 29 (Radio-TV 210)
+8:15-8:45 Coffee
+Morphology and Lexicon
+8:45-9:15 Arabic Binominal Compound Constructions & Word Formation
+9:15-9:45 Evaluating Arabic Morphological Analyzers on Moroccan Arabic Diminutives: Challenges and Performance Gaps    
+9:45-10:15 Permeability and stratification in the Moroccan Arabic diglossic lexicon   
+10:15-10:45 Differential Semantic Retention Patterns of Standard Arabic Lexicon in Regional Dialects
+
+10:45-11:00  coffee break
+Grammar Issues
+11:00-11:30 The discourse function of second-person clitics in Khuzestani Arabic
+11:30-12:00 Evidence for Indexical Shift in Moroccan Arabic   
+ 12:00-12:30  Answering systems and proposition salience: Evidence from Hijazi Arabic   
+12:30-1:00 A Semantic-Syntactic Typology of Medieval Arabic Proverbial Structures   
+
+1:00 Closing remarks, End of Symposium
+
+
+Poster titles
+Vocatives as attitudinal markers: The Tunisian Arabic particle ha:   
+
+Between Cultures, Between Words: Politeness and Request Strategies Among Heritage Speakers of Arabic in the US   
+
+Discourse of Manipulation in the Egyptian Presidential Candidates’s T.V Interviews (2012) A Pragma-Critical Analysis   
+
+From KhilƒÅfah to Dawlah Madaniyyah: A Critical Discourse Analysis of Ideological Rearticulation in the Muslim 
+Brotherhood’s Arabic Political Language 
+
+Spatial Prepositions in Najdi Arabic   
+
+Root or Lexeme? Evidence from Diminutives in Najdi Arabic   
+
+Emphatic Imperatives in Iraqi Arabic   
+
+Phonological Transfer and Markedness Effects in Saudi Arabic Speakers' English Obstruent Production   
+
+
+
+
+
