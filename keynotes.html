@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keynote Speakers — ASAL 39</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --iu-crimson: #990000;
+  --navy:       #0D1B2A;
+  --gold:       #C9A84C;
+  --offwhite:   #F7F5F0;
+  --charcoal:   #1F1F1F;
+  --white:      #FFFFFF;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; color: var(--charcoal); background: var(--white); overflow-x: hidden; }
+
+/* ══ NAVBAR (Consolidated from About) ══ */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(13,27,42,0.97);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  text-decoration: none;
+}
+
+.dept-logo-composite {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo-trident {
+  height: 60px;
+  width: auto;
+  border-radius: 2px;
+}
+.logo-text-img {
+  height: 48px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+}
+
+.nav-logo-sep {
+  display: block;
+  width: 1px;
+  height: 50px;
+  background: rgba(201,168,76,0.35);
+}
+
+.nav-logo-text {
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+  white-space: nowrap;
+}
+.nav-logo-text::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 35px; height: 2px;
+  background: var(--gold);
+}
+
+.nav-links { display: flex; align-items: center; gap: 0.5rem; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.82);
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.75rem;
+  position: relative;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0.75rem; right: 0.75rem;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--white); }
+.nav-links a.active::after { transform: scaleX(1); }
+
+.nav-register {
+  background: var(--iu-crimson) !important;
+  color: var(--white) !important;
+  border-radius: 50px !important;
+  padding: 0.55rem 1.5rem !important;
+  font-weight: 600 !important;
+  margin-left: 0.5rem;
+  transition: box-shadow 0.25s, transform 0.2s !important;
+}
+
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 4px; background: none; border: none;
+  position: relative; z-index: 1001;
+}
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--white); transition: all 0.3s; border-radius: 2px; }
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(13,27,42,0.80);
+  z-index: 998;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  padding: 2rem;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.mobile-menu::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(201,168,76,0.10), transparent 55%);
+  pointer-events: none;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  position: relative;
+  z-index: 1;
+  color: rgba(255,255,255,0.88);
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.55rem 1rem;
+  transition: color 0.2s, letter-spacing 0.2s, transform 0.2s;
+  font-weight: 500;
+  text-align: center;
+}
+.mobile-menu a:hover,
+.mobile-menu a.active {
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  transform: translateY(-1px);
+}
+.mobile-menu .nav-register {
+  z-index: 1;
+  background: var(--iu-crimson) !important;
+  color: var(--white) !important;
+  border-radius: 999px !important;
+  text-align: center;
+  margin-top: 0.65rem;
+  padding: 0.95rem 2.2rem !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.06em;
+  min-width: min(84vw, 320px);
+}
+body.menu-open { overflow: hidden; }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ══ PAGE HERO ══ */
+.page-hero {
+  background: var(--navy);
+  padding: 200px 2rem 100px;
+  text-align: center;
+  position: relative;
+}
+.page-hero-inner { position: relative; z-index: 2; animation: fadeUp 1s ease; }
+.eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--white);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.page-hero p {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+/* ══ KEYNOTE PANEL STYLING ══ */
+.keynote-panel {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  min-height: 500px;
+  align-items: stretch;
+}
+.keynote-panel.flip { grid-template-columns: 1fr 420px; }
+.keynote-panel.flip .kp-photo { order: 2; }
+.keynote-panel.flip .kp-body  { order: 1; }
+
+.kp-photo {
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #1a2a3a, #0d1b2a);
+}
+.kp-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.kp-photo-placeholder {
+  width: 100%; height: 100%; min-height: 420px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem; font-weight: 700;
+  color: rgba(255,255,255,.15);
+  letter-spacing: .05em;
+}
+.kp-day-badge {
+  position: absolute; top: 2rem; left: 2rem;
+  background: rgba(13,27,42,.85);
+  color: var(--gold);
+  font-family: 'Space Mono', monospace;
+  font-size: .65rem; letter-spacing: .18em;
+  text-transform: uppercase;
+  padding: .4rem .9rem;
+  border-radius: 50px;
+  border: 1px solid rgba(201,168,76,.35);
+  backdrop-filter: blur(6px);
+}
+
+.kp-body {
+  padding: 4.5rem;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.kp-body.dark { background: var(--navy); color: var(--white); }
+.kp-body.light { background: var(--offwhite); }
+.kp-body.white { background: var(--white); }
+
+.kp-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+}
+.kp-body.dark .kp-name { color: var(--white); }
+.kp-body.light .kp-name, .kp-body.white .kp-name { color: var(--iu-crimson); }
+
+.kp-affil {
+  font-size: 1rem; color: #888; margin-bottom: 2rem;
+  letter-spacing: .02em;
+}
+.kp-body.dark .kp-affil { color: rgba(255,255,255,.5); }
+
+.kp-talk-label {
+  font-family: 'Space Mono', monospace;
+  font-size: .7rem; letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .6rem;
+}
+.kp-talk-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem; font-weight: 700;
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.kp-body.dark .kp-talk-title { color: rgba(255,255,255,.9); }
+
+.kp-abstract {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 2rem;
+}
+.kp-body.dark .kp-abstract { color: rgba(255,255,255,0.7); }
+
+.kp-bio-toggle {
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.kp-bio-toggle:hover { text-decoration: underline; }
+
+.kp-bio {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-style: italic;
+  padding: 1.5rem;
+  background: rgba(0,0,0,0.03);
+  border-radius: 8px;
+  display: none;
+}
+.kp-body.dark .kp-bio { background: rgba(255,255,255,0.05); }
+.kp-bio.open { display: block; animation: fadeIn 0.4s ease; }
+
+.kp-session {
+  margin-top: auto;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--gold);
+  font-size: .85rem;
+  color: #888;
+  background: rgba(0,0,0,.04);
+  border-radius: 0 6px 6px 0;
+}
+.kp-body.dark .kp-session { background: rgba(255,255,255,.05); color: rgba(255,255,255,.45); }
+
+/* ══ FOOTER ══ */
+footer {
+  background: #050b12;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  padding: 4.5rem 2rem;
+  border-top: 1px solid rgba(201,168,76,0.08);
+  font-size: 0.85rem;
+}
+footer strong { color: rgba(255,255,255,0.8); display: block; margin-bottom: 0.8rem; font-size: 1.1rem; }
+footer a { color: var(--gold); text-decoration: none; }
+
+/* ══ REVEAL & UTILITIES ══ */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: none; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@media (max-width: 1300px) { .nav-links { display: none; } .hamburger { display: flex; } }
+@media (max-width: 1024px) {
+  .keynote-panel, .keynote-panel.flip { grid-template-columns: 1fr; }
+  .keynote-panel.flip .kp-photo { order: 0; }
+  .keynote-panel.flip .kp-body  { order: 1; }
+  .kp-body { padding: 3rem 2rem; }
+  .logo-text-img, .nav-logo-sep { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="dept-logo-composite">
+      <img src="log.jpg" alt="IU Trident" class="logo-trident">
+      <img src="o.png" alt="Department Branding" class="logo-text-img">
+    </div>
+    <span class="nav-logo-sep"></span>
+    <span class="nav-logo-text">ASAL 39</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="keynotes.html" class="active">Keynotes</a></li>
+    <li><a href="program.html">Program</a></li>
+    <li><a href="practical.html">Practical Info</a></li>
+    <li><a href="committee.html">Committee</a></li>
+    <li><a href="https://indianauniv.ungerboeck.com/prod/emc00/register.aspx?aat=527a706245534d5349774b4742774c7a6d687970716f5a6858694f415a6a4337634e57444c5867464c45303d" class="nav-register">Register Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="keynotes.html">Keynotes</a>
+  <a href="https://indianauniv.ungerboeck.com/prod/emc00/register.aspx?aat=527a706245534d5349774b4742774c7a6d687970716f5a6858694f415a6a4337634e57444c5867464c45303d" target="_blank" class="nav-register">Register Now</a>
+</div>
+
+<!-- ══ PAGE HERO ══ -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">Keynote Speakers</span>
+    <h1>Distinguished Voices<br>in Arabic Linguistics</h1>
+    <p>Four leading scholars addressing ASAL 39 across three days</p>
+  </div>
+</div>
+
+<!-- ══ SPEAKER 1: Usama Soltan ══ -->
+<div class="keynote-panel reveal">
+  <div class="kp-photo">
+    <img src="Usama.png" alt="Usama Soltan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="kp-photo-placeholder" style="display:none;">US</div>
+    <span class="kp-day-badge">Friday, Mar 27 · 11:00 AM</span>
+  </div>
+  <div class="kp-body white">
+    <span class="eyebrow">Keynote I</span>
+    <h2 class="kp-name">Usama Soltan</h2>
+    <p class="kp-affil">Middlebury College, United States</p>
+    <p class="kp-talk-label">Talk Title</p>
+    <p class="kp-talk-title">On the Morphosyntax of Adnominal Demonstratives in Egyptian Arabic</p>
+    <div class="kp-abstract">
+      Adnominal demonstratives in Egyptian Arabic (EA) raise a number of interesting puzzles to linguistic analysis. For one thing, like the rest of Arabic dialects, demonstratives in EA co-occur with nominals already marked by the definite article. However, unlike the majority of Arabic dialects (though like those in the Sudanic dialect group), the unmarked placement of EA demonstratives is post-nominal. Interestingly, however, there are a few grammatical contexts in which EA demonstratives may occur pre-nominally (Doss 1976). Even more puzzling is that in those pre-nominal placement contexts, the nominal may appear in either definite or (quite unexpectedly) indefinite form (Woidich 1992). In addition, the pre-nominal placement of demonstratives in EA is typically associated with an attitudinal stance on the part of the speaker, which may be either negative or positive. This talk aims to provide a descriptive account of adnominal demonstratives in EA and propose an analysis for their grammatical properties.
+    </div>
+    <div class="kp-bio-toggle" onclick="toggleBio(this)">+ View Speaker Bio</div>
+    <div class="kp-bio">
+      Usama Soltan is Professor of Arabic and Linguistics at Middlebury College in Vermont, USA, where he teaches courses on Arabic language and culture, Arabic linguistics and sociolinguistics, and general linguistics. He holds a PhD in linguistics from the University of Maryland, College Park, and his research primarily focuses on the investigation of syntactic and morphosyntactic phenomena in Arabic dialects, specifically in Standard Arabic and Egyptian Arabic. His work on Arabic syntax has investigated issues related to clause structure, word order, agreement and case, negation patterns, negative polarity and negative concord, wh-questions, exceptives, and ellipsis.
+    </div>
+    <div class="kp-session">📍 Radio-TV Building, Room 210 · Friday, March 27 · 11:00 AM – 12:00 PM</div>
+  </div>
+</div>
+
+<!-- ══ SPEAKER 2: Muhammad Abdul-Mageed ══ -->
+<div class="keynote-panel flip reveal">
+  <div class="kp-photo">
+    <img src="Muhammad.jpg" alt="Muhammad Abdul-Mageed" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="kp-photo-placeholder" style="display:none;">MA</div>
+    <span class="kp-day-badge">Friday, Mar 27 · 4:50 PM</span>
+  </div>
+  <div class="kp-body dark">
+    <span class="eyebrow">Keynote II</span>
+    <h2 class="kp-name">Muhammad Abdul-Mageed</h2>
+    <p class="kp-affil">The University of British Columbia, Canada</p>
+    <p class="kp-talk-label">Talk Title</p>
+    <p class="kp-talk-title">TBA</p>
+    <div class="kp-abstract">
+      Abstract for Muhammad Abdul-Mageed's talk will be announced soon. Please check back for updates.
+    </div>
+    <div class="kp-session">📍 Radio-TV Building, Room 210 · Friday, March 27 · 4:50 PM – 5:50 PM</div>
+  </div>
+</div>
+
+<!-- ══ SPEAKER 3: Jalal Al-Tamimi ══ -->
+<div class="keynote-panel reveal">
+  <div class="kp-photo">
+    <div class="kp-photo-placeholder">JA</div>
+    <span class="kp-day-badge">Saturday, Mar 28 · 11:15 AM</span>
+  </div>
+  <div class="kp-body light">
+    <span class="eyebrow">Keynote III</span>
+    <h2 class="kp-name">Jalal Al-Tamimi</h2>
+    <p class="kp-affil">Université Paris Cité, France</p>
+    <p class="kp-talk-label">Talk Title</p>
+    <p class="kp-talk-title">On the Role of Fine Phonetic Detail in Arabic Phonology</p>
+    <div class="kp-abstract">
+      During this talk, I’ll present a series of research activities emphasising the role of fine phonetic detail (FPD) and its contribution to describing gradiency in phonology. FPD relates to speaker-specific details, which are stored in the mental representation and are used to identify specific categories and/or the speaker/dialect, following exemplar-based approaches to speech production and perception. In the Arabic context, we look at examples relating to gemination and how FDP allowed to refine the phonological description of the feature [±Tense]. We then move to the voicing contrast, with and without interaction with gemination showing that the features [±Tense] and [±Voice] are active, but are dialect-specific and receive gradient specification. We then move to pharyngealised and guttural consonants in Arabic, which all share a gradient feature [±CET] (for Constricted Epilaryngeal Tube). Finally, using FDP we demonstrate its usefulness in identifying dialectal differences from a geolinguistic and sociolinguistic points of view.
+    </div>
+    <div class="kp-bio-toggle" onclick="toggleBio(this)">+ View Speaker Bio</div>
+    <div class="kp-bio">
+      Dr Jalal Al-Tamimi is Associate Professor of Experimental Psycholinguistics and Phonology at Université Paris Cité. After receiving his PhD in 2007 from Lyon University, he worked at Newcastle University, UK between 2007-2021 (researcher and Senior Lecturer), and is Associate Professor at Université Paris Cité since 2021. He is a Lab Phonologist, looking at the links between production, perception, and learning using articulatory, acoustic, behavioural, and computational techniques. He authored over 50 peer reviewed journal articles and in prestigious conferences, and supervised 16 PhD students. He co-developed Arabic WebMAUS for forced-alignment and received in 2023 his HDR documenting the contribution of fine phonetic detail to gradiency in phonology.
+    </div>
+    <div class="kp-session">📍 Radio-TV Building, Room 210 · Saturday, March 28 · 11:15 AM – 12:15 PM</div>
+  </div>
+</div>
+
+<!-- ══ SPEAKER 4: Nihal Nagi Sarhan ══ -->
+<div class="keynote-panel flip reveal">
+  <div class="kp-photo">
+    <img src="Nihal.jpeg" alt="Nihal Nagi Sarhan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="kp-photo-placeholder" style="display:none;">NN</div>
+    <span class="kp-day-badge">Saturday, Mar 28 · 5:10 PM</span>
+  </div>
+  <div class="kp-body dark">
+    <span class="eyebrow">Keynote IV</span>
+    <h2 class="kp-name">Nihal Nagi Sarhan</h2>
+    <p class="kp-affil">Ain Shams University, Egypt</p>
+    <p class="kp-talk-label">Talk Title</p>
+    <p class="kp-talk-title">Scripts of Power: Decoding Cairo’s Linguistic Landscape</p>
+    <div class="kp-abstract">
+      The linguistic landscape -the constellation of written signs in public space- has gradually evolved from being largely approached in descriptive terms into a robust cue of  ethnographic typology (Blommaert & Maly, 2019), a strategic site for language planning and policy (Shohamy, 2015) and a dynamic space for pedagogical engagement (Cenoz and Gorter, 2021). This talk shows how the use of Franco (Arabizi) -writing Arabic in Latin letters- on the linguistic landscape creates a crossroads of these trajectories. Drawing on the Cairene linguistic landscape, I trace the migration of Franco/Arabizi from digital interactions between millennials into physical signage, as a parallel code alongside Modern Standard Arabic, dialectal Arabic, and English. Its physical visibility signals a horizontal shift in linguistic capital (Bourdieu, 1991), indexing a social group whose symbolic power is addressed via a newly designed (Bell 2001) hybrid textuality that challenges established classificatory frameworks. Arabizi also unsettles vertical hierarchies of the “levels of modern Arabic” as defined by Badawi (1975) and later scholarship (e.g., 2020), both theoretically and pedagogically. This talk offers critical implications for the broader field. For the theoretical linguist, it invites a re-evaluation of what constitutes a "written variety" and/or a level of contemporary Arabic in the 21st century. For practitioners and educators, it calls for a dialogue on the relevance of "standard" varieties in an increasingly Arabizi-mediated digital and public sphere. Ultimately, it seeks to answer: who owns the linguistic landscape? And equally important, which linguistic capital would gain more value over the near and distant future?
+    </div>
+    <div class="kp-bio-toggle" onclick="toggleBio(this)">+ View Speaker Bio</div>
+    <div class="kp-bio">
+      Nihal Nagi Sarhan is Professor of Linguistics at the Faculty of Al-Alsun, Ain Shams University. Her work spans sociolinguistics, discourse analysis, and gender studies. Her research examines language as a resource for identity construction, social stratification, and political negotiation. Her recent publications include The Role of Perceived Self–Other Similarity in Mitigating Arabic Hate Speech during Pandemics; From “Operation Cast Lead” to “Operation Swords of Iron”; A Critical Stylistic Analysis of Ideologies of Masculinity and Femininity in Folktales of Egypt (1980), A Tale of a City: The Linguistic Landscape of Cairo Streets; and “Because I Am a Girl”: Identity and Positioning in Afghani Women’s Narratives. She teaches undergraduate and graduate courses in sociolinguistics and discourse studies, serves on the editorial board of the Journal of Arabic Sociolinguistics, and supervises MA and PhD theses.
+    </div>
+    <div class="kp-session">📍 Radio-TV Building, Room 210 · Saturday, March 28 · 5:10 PM – 6:10 PM</div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p><strong>39th Annual Symposium on Arabic Linguistics (ASAL 39)</strong></p>
+  <p>March 27–29, 2026 · Indiana University Bloomington</p>
+  <div style="margin-top:2rem; opacity: 0.8; display: flex; justify-content: center;">
+     <img src="log.jpg" style="height: 45px;" alt="IU Trident">
+  </div>
+  <p style="margin-top:1.5rem;">
+    <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="#">Register</a>
+  </p>
+  <p style="margin-top:1.5rem;font-size:.75rem; opacity: 0.4;">© 2026 Arabic Linguistics Society. All rights reserved.</p>
+</footer>
+
+<script>
+/* ── NAVIGATION ── */
+const ham = document.getElementById('hamburger');
+const mob = document.getElementById('mobileMenu');
+ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); });
+
+/* ── BIO TOGGLE ── */
+function toggleBio(btn) {
+  const bio = btn.nextElementSibling;
+  bio.classList.toggle('open');
+  btn.innerText = bio.classList.contains('open') ? '- Hide Speaker Bio' : '+ View Speaker Bio';
+}
+
+/* ── SCROLL REVEAL ── */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

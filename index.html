@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASAL 39 — 39th Annual Symposium on Arabic Linguistics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="dept-logo-composite">
+      <img src="log.jpg" alt="IU Trident" class="logo-trident">
+      <img src="o.png" alt="Department Branding" class="logo-text-img">
+    </div>
+    <span class="nav-logo-sep"></span>
+    <span class="nav-logo-text">ASAL 39</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="keynotes.html">Keynotes</a></li>
+    <li><a href="program.html">Program</a></li>
+    <li><a href="practical.html">Practical Info</a></li>
+    <li><a href="committee.html">Committee</a></li>
+    <li><a href="https://indianauniv.ungerboeck.com/prod/emc00/register.aspx?aat=527a706245534d5349774b4742774c7a6d687970716f5a6858694f415a6a4337634e57444c5867464c45303d"
+          target="_blank" class="nav-register">Register Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="keynotes.html">Keynotes</a>
+  <a href="program.html">Program</a>
+  <a href="practical.html">Practical Info</a>
+  <a href="committee.html">Committee</a>
+  <a href="https://indianauniv.ungerboeck.com/prod/emc00/register.aspx?aat=527a706245534d5349774b4742774c7a6d687970716f5a6858694f415a6a4337634e57444c5867464c45303d"
+     target="_blank" class="nav-register">Register Now</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="home">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-logo-container">
+      <div class="dept-logo-composite hero-variant">
+        <img src="log.jpg" alt="IU Trident" class="logo-trident">
+        <img src="o.png" alt="Department Branding" class="logo-text-img">
+      </div>
+    </div>
+    <span class="hero-eyebrow">ASAL 39 · Indiana University Bloomington</span>
+    <h1 class="hero-title">39th Annual Symposium<br>on Arabic Linguistics</h1>
+    <p class="hero-date">March 27–29, 2026</p>
+    <p class="hero-tagline">Advancing the Scientific Study of Arabic Language</p>
+    <div class="hero-buttons">
+      <a href="https://indianauniv.ungerboeck.com/prod/emc00/register.aspx?aat=527a706245534d5349774b4742774c7a6d687970716f5a6858694f415a6a4337634e57444c5867464c45303d"
+         target="_blank" class="btn-primary">Register for ASAL 39</a>
+      <a href="program.html" class="btn-secondary">View Program</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ══ COUNTDOWN ══ -->
+<div id="countdown-strip">
+  <p class="countdown-label">Conference Begins In</p>
+  <div class="countdown-grid">
+    <div class="countdown-box"><span class="countdown-num" id="cd-days">00</span><span class="countdown-unit">Days</span></div>
+    <div class="countdown-colon">:</div>
+    <div class="countdown-box"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-unit">Hours</span></div>
+    <div class="countdown-colon">:</div>
+    <div class="countdown-box"><span class="countdown-num" id="cd-mins">00</span><span class="countdown-unit">Minutes</span></div>
+    <div class="countdown-colon">:</div>
+    <div class="countdown-box"><span class="countdown-num" id="cd-secs">00</span><span class="countdown-unit">Seconds</span></div>
+  </div>
+</div>
+
+<!-- ══ QUICK NAV ══ -->
+<div id="quicknav">
+  <div class="quicknav-inner">
+    <a href="about.html"     class="ql-card"><span class="ql-card-icon">📖</span>About</a>
+    <a href="keynotes.html"  class="ql-card"><span class="ql-card-icon">🎤</span>Keynotes</a>
+    <a href="program.html"   class="ql-card"><span class="ql-card-icon">📅</span>Program</a>
+    <a href="practical.html" class="ql-card"><span class="ql-card-icon">🗺️</span>Practical Info</a>
+    <a href="committee.html" class="ql-card"><span class="ql-card-icon">👥</span>Committee</a>
+  </div>
+</div>
+
+<!-- ══ IN MEMORIAM ══ -->
+<section id="memoriam">
+  <div class="memoriam-inner reveal">
+    <span class="memoriam-eyebrow">In Memoriam</span>
+    <div class="memoriam-rule"></div>
+    <h2 class="memoriam-name">Professor Salman Al-Ani</h2>
+    <p class="memoriam-dates">1935 – 2024</p>
+    <blockquote class="memoriam-quote">
+      This conference honors the legacy of the late Professor Salman Al-Ani (1935–2024) for his outstanding contributions to the field of Arabic Linguistics. His pioneering work and dedication have profoundly influenced generations of scholars and continue to inspire the study of Arabic linguistics worldwide.
+    </blockquote>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p><strong>39th Annual Symposium on Arabic Linguistics (ASAL 39)</strong></p>
+  <p>March 27–29, 2026 · Indiana University Bloomington</p>
+  <div style="margin-top:2rem; opacity: 0.8; display: flex; justify-content: center;">
+     <img src="log.jpg" style="height: 40px;" alt="IU Trident">
+  </div>
+  <p style="margin-top:1.5rem;">
+    <a href="https://indianauniv.ungerboeck.com/prod/emc00/register.aspx?aat=527a706245534d5349774b4742774c7a6d687970716f5a6858694f415a6a4337634e57444c5867464c45303d" target="_blank">Register</a>
+    &nbsp;·&nbsp;
+    <a href="https://arabic-linguistics-society.uwm.edu/als-membership/" target="_blank">ALS Membership</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.visitbloomington.com/hotels/hotels-and-motels/" target="_blank">Hotels</a>
+  </p>
+  <p style="margin-top:1.5rem;font-size:.75rem; opacity: 0.4;">© 2026 Arabic Linguistics Society. All rights reserved.</p>
+</footer>
+
+<script>
+/* ── HAMBURGER ── */
+const ham = document.getElementById('hamburger');
+const mob = document.getElementById('mobileMenu');
+ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); });
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { ham.classList.remove('open'); mob.classList.remove('open'); }));
+
+/* ── COUNTDOWN ── */
+function pad(n) { return String(n).padStart(2,'0'); }
+function tick() {
+  const diff = Math.max(0, new Date('2026-03-27T09:00:00-05:00') - Date.now());
+  document.getElementById('cd-days').textContent  = pad(Math.floor(diff/86400000));
+  document.getElementById('cd-hours').textContent = pad(Math.floor(diff%86400000/3600000));
+  document.getElementById('cd-mins').textContent  = pad(Math.floor(diff%3600000/60000));
+  document.getElementById('cd-secs').textContent  = pad(Math.floor(diff%60000/1000));
+}
+tick(); setInterval(tick, 1000);
+
+/* ── SCROLL REVEAL ── */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+/* ── PARTICLE CANVAS ── */
+(function () {
+  const canvas = document.getElementById('hero-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, pts = [];
+  function resize() { W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; }
+  function Pt() {
+    this.x = Math.random() * W;
+    this.y = Math.random() * H;
+    this.vx = (Math.random() - .5) * .38;
+    this.vy = (Math.random() - .5) * .38;
+    this.r = Math.random() * 1.4 + .5;
+    this.gold = Math.random() < .18;
+  }
+  function init() { pts = []; const n = Math.floor((W * H) / 9000); for (let i = 0; i < n; i++) pts.push(new Pt()); }
+  function frame() {
+    ctx.clearRect(0, 0, W, H);
+    pts.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+      if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = p.gold ? 'rgba(201,168,76,.65)' : 'rgba(255,255,255,.48)';
+      ctx.fill();
+    });
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = i + 1; j < pts.length; j++) {
+        const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+        const d = Math.sqrt(dx * dx + dy * dy);
+        if (d < 110) {
+          ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
+          ctx.strokeStyle = `rgba(255,255,255,${.07 * (1 - d / 110)})`;
+          ctx.lineWidth = .5; ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+  resize(); init(); frame();
+  window.addEventListener('resize', () => { resize(); init(); });
+})();
+</script>
+</body>
+</html>
